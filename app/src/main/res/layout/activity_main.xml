@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_custom"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".views.MainActivity">
+
+    <Button
+        android:id="@+id/btnBuildingManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_button_home"
+        android:onClick="onButtonBuildingManager"
+        android:text="Quản lý Toà Nhà" />
+
+    <Button
+        android:id="@+id/btnResidentManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_button_home"
+        android:onClick="onButtonResidentManager"
+        android:text="Quản lý Cư dân" />
+</LinearLayout>

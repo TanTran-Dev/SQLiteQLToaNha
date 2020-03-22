@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtIDResident"-->
+<!--        android:layout_weight="4"-->
+<!--        android:textSize="20sp"-->
+<!--        android:text="ID"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <TextView
+        android:id="@+id/txtNameOfHousehold"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="Name Of Householde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtRoomNumber"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="Room Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtNameOfBuilding"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="Name Of Building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="Phone Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

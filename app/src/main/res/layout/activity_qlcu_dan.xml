@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_custom_1"
+    android:padding="15dp"
+    tools:context=".views.QLCuDanActivity">
+
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:text="QUẢN LÝ CƯ DÂN"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Toà Nhà"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spnBuilding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <EditText
+        android:maxLength="30"
+        android:inputType="textPersonName"
+        android:id="@+id/edtNameOfHousehold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Chủ Hộ" />
+
+    <EditText
+        android:maxLength="5"
+        android:id="@+id/edtRoomNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số Phòng" />
+
+    <EditText
+        android:maxLength="11"
+        android:inputType="number"
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số Điện Thoại" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:onClick="onButtonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button"
+            android:text="Thêm"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:onClick="onButtonUpdate"
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_button"
+            android:text="Cập nhật"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnCancle"
+            android:onClick="onButtonCancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button"
+            android:text="Huỷ"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvResident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
